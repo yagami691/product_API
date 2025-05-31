@@ -29,7 +29,7 @@ public class ProductController {
     @PostMapping(path = "/addProduct")
     public ResponseEntity<String> addProduct(@RequestBody Product product) {
         productService.addProduct(product);
-                return ResponseEntity.status(HttpStatus.CREATED).body("Product Added");
+                return ResponseEntity.status(HttpStatus.CREATED).body("Product Added with successful");
 
     }
 
@@ -38,12 +38,12 @@ public class ProductController {
             @PathVariable Long productId, @RequestBody Product product) {
             productService.updateProduct(productId,
                     product.getPrice(), product.getQuantity());
-            return ResponseEntity.ok("Product Updated");
+            return ResponseEntity.ok("Product Updated with successful");
     }
 
     @DeleteMapping(path ="/{id}")
     public ResponseEntity<String> deleteProduct(@PathVariable Long id) {
         productService.deleteProduct(id);
-        return ResponseEntity.ok("Product Deleted");
+        return ResponseEntity.ok("Product Deleted with successful");
     }
 }

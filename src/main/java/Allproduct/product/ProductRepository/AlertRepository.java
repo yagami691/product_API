@@ -8,6 +8,6 @@ import java.util.List;
 
 
 public interface AlertRepository extends JpaRepository<Alert, Long> {
-    List<Alert> findByProduct(Product product);
+
     boolean existsByProduct(Product product);
 }

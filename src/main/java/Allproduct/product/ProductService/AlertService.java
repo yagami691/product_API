@@ -31,7 +31,7 @@ public class AlertService {
             if (productOpt.isPresent()) {
                 Product product = productOpt.get();
 
-                // Évite de créer des doublons
+
                 boolean exists = alertRepository.existsByProduct(product);
                 if (!exists && product.getQuantity() < 5) {
                     Alert alert = new Alert();
