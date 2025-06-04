@@ -159,7 +159,8 @@ curl -X POST http://localhost:8080/api/products/createAlert \
 
 ## 👤 Author
 
-**Name:**Nkounga Moïse**
-**LinkedIn:** [My Linkedin profile](https://www.linkedin.com/in/your-profile)
+Name: **Nkounga Moïse**
+
+LinkedIn: [My Linkedin profile](https://www.linkedin.com/in/your-profile)
 
 ---
